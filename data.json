@@ -1,0 +1,70 @@
+{
+  "name": "s",
+  "description": "aaaaaa",
+  "url": "tupchiy.info",
+  "template": "tupchiy",
+  "language_code": "en",
+  "allow_indexing": true,
+  "redirect_404s_to_homepage": true,
+  "use_www_version": true,
+  "pages": [],
+  "luxury_hero_title": "aaa",
+  "luxury_hero_subtitle": "bbb",
+  "luxury_cta_text": "ccc",
+  "luxury_logo_url": "ddd",
+  "classic_welcome_text": "eee",
+  "classic_main_cta": "fff",
+  "classic_footer_text": "ggg",
+  "modern_tagline": "hhh",
+  "modern_accent_color": "iii",
+  "modern_features_list": "jjj",
+  "tupchiy_site_name": "s",
+  "tupchiy_hero_title": "ss",
+  "tupchiy_hero_subtitle": "sss",
+  "tupchiy_hero_bonus": "ssss",
+  "tupchiy_cta_text": "sssss",
+  "tupchiy_popup_bonus": "ssssss",
+  "Slots": [
+    {
+      "id": 95,
+      "Name": "Sugar Rush",
+      "link": "/goto",
+      "logo": [
+        {
+          "id": 1,
+          "name": "Gates-of-Olympus_500x560_D-W.jpg",
+          "url": "/uploads/Gates_of_Olympus_500x560_D_W_2f303db1a0.jpg",
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_Gates-of-Olympus_500x560_D-W.jpg",
+              "hash": "thumbnail_Gates_of_Olympus_500x560_D_W_2f303db1a0",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "path": null,
+              "width": 139,
+              "height": 156,
+              "size": 8.68,
+              "sizeInBytes": 8681,
+              "url": "/uploads/thumbnail_Gates_of_Olympus_500x560_D_W_2f303db1a0.jpg"
+            },
+            "small": {
+              "name": "small_Gates-of-Olympus_500x560_D-W.jpg",
+              "hash": "small_Gates_of_Olympus_500x560_D_W_2f303db1a0",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "path": null,
+              "width": 446,
+              "height": 500,
+              "size": 56.42,
+              "sizeInBytes": 56422,
+              "url": "/uploads/small_Gates_of_Olympus_500x560_D_W_2f303db1a0.jpg"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "redirects": [],
+  "_generated_at": "2025-12-02T15:07:41.648Z",
+  "_version": "1.0.0"
+}
