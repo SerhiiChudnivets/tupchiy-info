@@ -1,5 +1,5 @@
 {
-  "name": "tupchiy.info",
+  "name": "Gates of Olimpus",
   "description": "casino, real money",
   "url": "tupchiy.info",
   "template": "tupchiy",
@@ -23,8 +23,47 @@
     "publishedAt": "2025-12-09T10:17:37.791Z",
     "locale": null
   },
-  "Slots": [],
+  "Slots": [
+    {
+      "id": 1,
+      "Name": "Gates of Olimpus",
+      "link": "/gotolink",
+      "logo": [
+        {
+          "id": 12,
+          "name": "Gates-of-Olympus_500x560_D-W.jpg",
+          "url": "/uploads/Gates_of_Olympus_500x560_D_W_7c986716e2.jpg",
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_Gates-of-Olympus_500x560_D-W.jpg",
+              "hash": "thumbnail_Gates_of_Olympus_500x560_D_W_7c986716e2",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "path": null,
+              "width": 139,
+              "height": 156,
+              "size": 8.68,
+              "sizeInBytes": 8681,
+              "url": "/uploads/thumbnail_Gates_of_Olympus_500x560_D_W_7c986716e2.jpg"
+            },
+            "small": {
+              "name": "small_Gates-of-Olympus_500x560_D-W.jpg",
+              "hash": "small_Gates_of_Olympus_500x560_D_W_7c986716e2",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "path": null,
+              "width": 446,
+              "height": 500,
+              "size": 56.42,
+              "sizeInBytes": 56422,
+              "url": "/uploads/small_Gates_of_Olympus_500x560_D_W_7c986716e2.jpg"
+            }
+          }
+        }
+      ]
+    }
+  ],
   "redirects": [],
-  "_generated_at": "2025-12-09T16:44:38.047Z",
+  "_generated_at": "2025-12-09T16:55:23.979Z",
   "_version": "1.0.0"
 }
