@@ -24,6 +24,8 @@ interface CasinoData {
   allow_indexing: boolean
   redirect_404s_to_homepage: boolean
   use_www_version: boolean
+  // Rich text content
+  content?: string
   // Tupchiy specific fields
   tupchiy_hero_title?: string
   tupchiy_hero_subtitle?: string
@@ -721,6 +723,90 @@ const styles = `
     color: hsl(var(--foreground));
   }
 
+  /* Custom Content Section */
+  .content-section {
+    padding: 4rem 0;
+    background: hsl(var(--background));
+  }
+
+  .content-wrapper {
+    max-width: 56rem;
+    margin: 0 auto;
+    color: hsl(var(--foreground));
+    line-height: 1.8;
+    font-size: 1.125rem;
+  }
+
+  .content-wrapper h1, .content-wrapper h2, .content-wrapper h3, .content-wrapper h4 {
+    color: hsl(var(--primary));
+    margin: 2rem 0 1rem;
+    font-weight: 700;
+  }
+
+  .content-wrapper h1 { font-size: 2.5rem; }
+  .content-wrapper h2 { font-size: 2rem; }
+  .content-wrapper h3 { font-size: 1.5rem; }
+
+  .content-wrapper p {
+    margin-bottom: 1.5rem;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .content-wrapper a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+  }
+
+  .content-wrapper a:hover {
+    opacity: 0.8;
+  }
+
+  .content-wrapper ul, .content-wrapper ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .content-wrapper li {
+    margin-bottom: 0.5rem;
+  }
+
+  .content-wrapper blockquote {
+    border-left: 4px solid hsl(var(--primary));
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .content-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .content-wrapper table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+  }
+
+  .content-wrapper th, .content-wrapper td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid hsl(var(--border));
+    text-align: left;
+  }
+
+  .content-wrapper th {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+  }
+
+  .content-wrapper td {
+    color: hsl(var(--muted-foreground));
+  }
+
   /* Responsive */
   @media (max-width: 768px) {
     .hero-title {
@@ -747,6 +833,10 @@ const styles = `
     .header-buttons .btn {
       padding: 0.375rem 1rem;
       font-size: 0.875rem;
+    }
+
+    .content-wrapper {
+      font-size: 1rem;
     }
   }
 `;
@@ -1013,6 +1103,15 @@ export default function TupchiyTemplate() {
             </div>
           </div>
         </section>
+
+        {/* Custom Content Section */}
+        {data.content && (
+          <section className="content-section">
+            <div className="container">
+              <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: data.content }} />
+            </div>
+          </section>
+        )}
 
         {/* Article Section */}
         <section id="about" className="article-section">
